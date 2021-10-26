@@ -4,6 +4,10 @@ apt update
 echo Welche IP-Adresse soll genutzt werden?
 read ip
 
+echo 'echo remote '$ip' 1194 >> server.conf' >> vpnclient.sh
+echo "sleep 2" >> server.conf
+echo "reboot" >> server.conf
+
 path="/etc/network/interfaces"
 
 echo "source /etc/network/interfaces.d/*" > $path

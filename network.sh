@@ -4,10 +4,6 @@ apt update
 echo Welche IP-Adresse soll genutzt werden?
 read ip
 
-echo 'echo remote '$ip' 1194 >> server.conf' >> vpnclient.sh
-echo "sleep 2" >> server.conf
-echo "reboot" >> server.conf
-
 path="/etc/network/interfaces"
 
 echo "source /etc/network/interfaces.d/*" > $path
@@ -22,5 +18,4 @@ path2="/etc/resolv.conf"
 echo "nameserver 10.16.1.253" > $path2
 
 sleep 2
-
 systemctl restart networking

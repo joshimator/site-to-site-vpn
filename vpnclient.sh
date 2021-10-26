@@ -15,3 +15,6 @@ echo "ping-restart 180">> server.conf
 echo "ping-timer-rem" >> server.conf
 echo "verb 3" >> server.conf
 echo "mute 50" >> server.conf
+
+sleep 2
+reboot

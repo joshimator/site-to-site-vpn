@@ -17,4 +17,6 @@ echo "gateway 10.16.1.245" >> $path
 path2="/etc/resolv.conf"
 echo "nameserver 10.16.1.253" > $path2
 
+sleep 2
+
 systemctl restart networking

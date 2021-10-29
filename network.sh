@@ -19,6 +19,6 @@ echo "nameserver 10.16.1.253" > $path2
 
 sleep 2
 systemctl restart networking
-sleep 5
+sleep 2
 ping 1.1.1.1 -c 3
 ping web.de -c 3
